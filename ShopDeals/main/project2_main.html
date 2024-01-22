@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=<device-width>, initial-scale=1.0">
+    <link rel="stylesheet" href="project2_main.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>ShopDeals</title>
+</head>
+<body>
+     <nav>
+        <button class="navbar" id="navbar">
+            <div class="navbars"></div>
+            <ul class="sidebar" id="sidebar">
+                <li> <i class="fa fa-user"></i></li>
+                <li> User</li>
+                <li> Phone Number</li>
+                <li> Account Details</li>
+                <li> Orders</li>
+                <li> Customer Care</li>
+          </ul>  
+        </button>
+        <a href="project2_main.html" style="color:whitesmoke;
+        text-decoration: none;"><i class="fa fa-home" style="font-size: 16px;"></i>Home</a>
+        <h2>ShopDeals</h2>
+        
+        <select>
+            <option value="tkii" hidden disabled selected> Category</option>
+            <option value="Appliances"><a href="../appliance/project2_appliances.html">Appliances</a></option>
+            <option value="Clothes"><a href="../clothes/project2_clothes.html">Clothes</a></option>
+            <option value="Electronics"><a href="../electronics/project2_electronics.html">Electronics</a></option>
+            <option value="Furniture"><a href="../furniture/project2_furniture.html">Furniture</a></option>
+        </select>
+        <content><input type="search" placeholder="Search For Products"/>
+        <button type="menu">Search     <i class="fa fa-search"></i></button></content>
+       <span> <i class="fa fa-shopping-cart"></i>Cart</span>
+      <span id="account"> <i class="fa fa-user" ></i>Register/Login</span>
+    </nav>
+    <form id="formreg">
+        <h5>Name</h5>
+        <input type="text" placeholder="Please Enter Your Name" value="" id="name" />
+        <h5>Phone Number</h5>
+        <input type="text" placeholder="Please Enter Your Phone " value="" id="phone"  />
+        <h5>Email Address</h5>
+        <input type="email" placeholder="Please Enter Your Email " value=""  />
+        <h5>Date Of Birth</h5>
+        <input type="date" placeholder="Please Enter Your Date Of Birth" value=""  />
+        <h5>Password</h5>
+        <input type="password" placeholder="Please Enter Your Password" value="" id="pas" />
+        <p>Atleast One Capital Letter <br>Atleast One Small Letter <br>Atleast One Number<br>Atleast One Special Character *,#,#,@</p>
+        <button type="reset" id="reset">Reset</button>
+        <button type="submit" id="regsub">Submit</button>
+        <a href="#" id="login"><h5>Old Customer | Login Here</h5></a>
+    </form>
+
+    
+        <span id="cross">&#x2718;</span>
+        <form id="formlogin" >
+            <h5>Enter Your Phone Number/ Email</h5>
+            <input type="text" placeholder="Please Enter Your Phone/ Email " value=""  />
+            <h5>Password</h5>
+            <input type="password" placeholder="Please Enter Your Password" value="" id="pas" />
+            <button type="reset" id="reset">Reset</button>
+            <button type="submit" id="logsub" >Submit</button>
+            <a href="#" id="register"><h5>New Customer | Register Here</h5></a>
+        </form>
+        <span id="form"></span>
+
+            <ul class="categories">
+            <li><img src="images/Appliance.png" height="140px" width="250px"/><a href="../appliance/project2_appliances.html">Appliances</a></li>
+            <li><img src="images/clothes.png" height="140px" width="250px"/><a href="../clothes/project2_clothes.html">Clothes</a></li>
+            <li><img src="images/electronics.png" height="140px" width="250px"/><a href="../electronics/project2_electronics.html">Electronics</a></li>
+            <li><img src="images/Wooden-Furniture-Transparent-Background.png" height="140px" width="220px"/><a href="../furniture/project2_furniture.html">Furniture</a></li>
+            </ul> 
+            <ul class="best-seller">
+                <li><h2>Best Sellers</h2><img src="images/electronics.png" height="70px" width="130px"/><h3>(Electronics)</h3></li>
+                <li><img src="images/boAt-Nirvana-Ion-TWS-Earbuds-Launched-India.jpg" height="140px" width="260px"/>
+                    <h4>Airdopes Nirvana Ion</h4><p>Rs. 2,600  <span style="text-decoration: line-through;">Rs. 3,000</span></p></li>
+                <li><img src="images/lap.jpg" height="140px" width="260px"/>
+                    <h4>HP Victus Gaming Laptop</h4><p>Rs. 87,536  <span style="text-decoration: line-through;">Rs. 92,000</span></p></li>
+                <li><img src="images/Apple-iPhone-14-Pro-gold.jpg" height="140px" width="260px"/>
+                    <h4>Apple Iphone 15 Pro</h4><p>Rs. 1,40,990  <span style="text-decoration: line-through;">Rs. 1,44,000</span></p></li>
+            </ul>
+            <ul class="best-seller " style="background-color: blanchedalmond;">
+                <li><h2>Best Sellers</h2><img src="images/Appliance.png" height="70px" width="130px"/><h3>(Appliances)</h3></li>
+                <li><img src="images/wsm.jpg" height="140px" width="260px"/>
+                    <h4>IFB Fully Automatic Front Load Washing Machine</h4><p>Rs. 20,500  <span style="text-decoration: line-through;">Rs. 24,000</span></p></li>
+                <li><img src="images/frig4.jpg" height="140px" width="260px"/>
+                    <h4>Samsung 580L French Door Digital Inverter Refrigerator</h4><p>Rs. 74,990  <span style="text-decoration: line-through;">Rs. 87,990</span></p></li>
+                <li><img src="images/Xiaomi_Smart_TV_5A.png" height="140px" width="260px"/>
+                    <h4>Xiaomi Smart TV 5A Series With Dolby Audio And DTS</h4><span class="out">Restocking Soon!</span></li>
+            </ul>
+            <ul class="best-seller" style="background-color: violet;">
+                <li><h2>Best Sellers</h2><img src="images/Wooden-Furniture-Transparent-Background.png" height="70px" width="130px"/><h3>(Furniture)</h3></li>
+                <li><img src="images/sofa.jpg" height="140px" width="260px"/>
+                    <h4>3 seater cream sofa</h4><p>Rs. 13,600  <span style="text-decoration: line-through;">Rs. 20,000</span></p></li>
+                    <li><img src="images/bed1.jpeg" height="140px" width="260px"/>
+                        <h4>Nilkamal Oakwood Double Bed</h4><p>Rs. 13,600  <span style="text-decoration: line-through;">Rs. 20,000</span></p></li>
+                    <li><img src="images/almirah.jpg" height="140px" width="260px"/>
+                    <h4>Maroon 4 Drawer Domestic Steel Almirah</h4><p>Rs. 18,800  <span style="text-decoration: line-through;">Rs. 21,200</span></p></li>
+                
+            </ul>
+            <ul class="best-seller" style="background-color:palegreen;">
+                <li><h2>Best Sellers</h2><img src="images/clothes.png" height="70px" width="130px"/><h3>(Clothes)</h3></li>
+                <li><img src="images/jeans.jpeg" height="140px" width="260px"/>
+                    <h4>Tommy Hilfiger Scanton Slimfit Jeans</h4><p>Rs. 1,600  <span style="text-decoration: line-through;">Rs. 2,500</span></p></li>
+                <li><img src="images/089EO2G007_400_10.jpg" height="140px" width="260px"/>
+                    <h4>Esprit Navy Blue Blazer</h4><p>Rs. 3,100  <span style="text-decoration: line-through;">Rs. 4,200</span></p></li>
+                <li><img src="images/hoodie.jpg" height="140px" width="260px"/>
+                    <h4>Polo Ralph Lauren Hoodie Overfit</h4><p>Rs. 18,550  <span style="text-decoration: line-through;">Rs. 21,500</span></p></li>
+            </ul>
+            <div class="advboard">
+                <div class="adv">
+                        <div>
+                        <h3> Sofas</h3>
+                        <h3> From Rs. 5,990</h3>
+                        <p> Leatherette, Fabric & more</p>
+                        <p>Free Delivery | Quality Verified</p>
+                        </div>
+                        <img src="images/sofa.jpg" height="140px" width="200px" />
+                </div>
+                <div class="adv">
+                    <div>
+                    <h3>HP Laptops</h3>
+                    <h3> From Rs. 15,990</h3>
+                    <p >No Cost EMI | Upto Rs.5,000 off on exchanges </p>
+                    <p >10% instant discount on HDFC credit/debit card</p>
+                     </div>
+                    <img src="images/lap.jpg" height="140px" width="260px" />
+                </div>
+                <div class="adv">
+                    <div>
+                    <h3> Front Load Washing Machines</h3>
+                    <h3> From Rs. 25,990</h3>
+                    <p> Super Drum Inverter</p>
+                    <p>Fast Delivery | Warranty upto 10 years</p>
+                    </div>
+                    <img src="images/wsm.jpg" height="140px" width="260px" />
+                </div>
+            </div>
+            <div class="about"><h4>No Cost EMI</h4>
+                <p>
+                In an attempt to make high-end products accessible to all, our No Cost EMI plan enables you to shop with us under EMI, without shelling out any processing fee. Applicable on select mobiles, laptops, large and small appliances,
+                furniture, electronics and watches, you can now shop without burning a hole in your pocket. If you've been eyeing a product for a long time, chances are it may be up for a no cost EMI. Take a look ASAP! Terms and conditions
+                apply.
+                </p>
+                <h4>EMI on Debit Cards</h4>
+                <p>
+                Did you know debit card holders account for 79.38 crore in the country, while there are only 3.14 crore credit card holders? After enabling EMI on Credit Cards, in another attempt to make online shopping accessible to everyone,
+                Flipkart introduces EMI on Debit Cards, empowering you to shop confidently with us without having to worry about pauses in monthly cash flow. At present, we have partnered with Axis Bank, HDFC Bank, State Bank of India and
+                ICICI Bank for this facility. More power to all our shoppers! Terms and conditions apply.
+                </p>
+
+                <h4> Exchange Offers</h4>
+                <p>
+                Get an instant discount on the product that you have been eyeing on. Exchange your old appliances for a new one after the Flipkart experts calculate the value of your old appliance, provided it is in a working condition without damage to
+                the body or hardware. If a product is applicable for an exchange offer, you will see the ‘Buy with Exchange" option on the product description of the product. So, be smart, always opt for an exchange wherever possible. Terms and conditions
+                apply.
+                </p>
+            </div>
+
+            <footer>
+                <div class="footer">
+                    <ul><li>ABOUT</li>
+                    <li>Contact Us</li>
+                    <li>About Us</li>
+                    <li>Careers</li>
+                    <li>Corporate Information</li>
+                  </ul>
+                    <ul><li>HELP</li>
+                    <li>Payments</li>
+                    <li>Shipping</li>
+                    <li>Cancellation & Refunds</li>
+                    <li>FAQ</li>
+                    <li>Report Infringement</li>
+                    </ul>
+                    <ul><li>CONSUMER POLICY</li>
+                    <li>Cancellations & Returns</li>
+                    <li>Terms Of Use</li>
+                    <li>Security</li>
+                    <li>Privacy</li>
+                    <li>Sitemap</li>
+                    <li>Grievance Redressal</li></ul>
+                    <ul><li>SOCIAL</li>
+                    <li>Facebook  <abbr title="Facebook" style="font-weight: 900; text-decoration: none ;">&#x0066;</abbr></li>
+                    <li>Twitter   <i class="fa fa-twitter"></i></li>
+                    <li>Youtube   <abbr title="Youtube"><i class="fa fa-youtube-play" aria-hidden="true"></i></abbr></li>
+                    
+                </ul>
+                </div>
+                <div class="right_footer"> <span>Mail Us:</span>
+                <span>Registered Office Address</span></div>
+            </footer>
+            <div class="bottombar">
+               <a href="project2_main.html" style="color:whitesmoke;
+               text-decoration: none;"><i class="fa fa-home" ></i>Home</a>
+               <select>
+                <option value="tkii" hidden disabled selected> Category</option>
+                <option value="Appliances"><a href="">Appliances</a></option>
+                <option value="Clothes"><a href="">Clothes</a></option>
+                <option value="Electronics"><a href="">Electronics</a></option>
+                <option value="Furniture"><a href="">Furniture</a></option>
+                
+                </select>
+               <span><i class="fa fa-shopping-cart" ></i>Cart</span>
+               <span id="account1"><i class="fa fa-user" ></i>Account</span>
+            </div>
+            <script src="project2_main.js"></script>
+</body>
+</html>
